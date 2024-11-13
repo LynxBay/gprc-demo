@@ -28,6 +28,7 @@ public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
                 .setResult("Method [sayHello] invoked, result: " + result)
                 .build();
         responseObserver.onNext(response);
+
         responseObserver.onCompleted();
     }
 
